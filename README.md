@@ -3,8 +3,8 @@
 # ¡Bienvenido al repositorio del Proyecto HTML y CSS!
 Este proyecto es una práctica de desarrollo web que utiliza HTML y CSS para construir una página web estática.
 
-# 🛠 Funcionalidades
-** Página de Inicio: Contiene la estructura principal de la web.
+## 🛠 Funcionalidades
+ ** Página de Inicio: Contiene la estructura principal de la web.
 ** Página Sobre Nosotros: Información sobre el propósito del proyecto.
 ** Página de Contacto: Formulario para que los usuarios puedan ponerse en contacto.
 
