@@ -5,22 +5,7 @@
   <title>Contacto - Servicios Hogar</title>
   <link rel="shortcut icon" href="icono.png" type="image/icon">
   <link rel="stylesheet" href="styles.css">
-  <!-- Script para autocompletar datos del trabajador -->
-  <script>
-    function fillFormDataFromURL() {
-      const params = new URLSearchParams(window.location.search);
-      const trabajador = params.get('trabajador');
-      const area = params.get('area');
-      if (trabajador) {
-        document.getElementById('nombreTrabajador').value = trabajador;
-      }
-      if (area) {
-        document.getElementById('areaTrabajador').value = area;
-      }
-    }
-    // Al cargar la página, se llama a la función
-    window.onload = fillFormDataFromURL;
-  </script>
+
 </head>
 <body>
   <!-- HEADER -->
