@@ -1,0 +1,235 @@
+/* ========== RESET BÁSICO (Opcional) ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ========== ESTILOS GENERALES ========== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: rgba(200, 190, 41, 0.5);
+  
+}
+/* ========== HEADER ========== */
+header {
+  background-color: rgba(255, 120, 0, 0.9);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo{
+  max-width: 15rem;
+  max-height: 15rem;
+  padding: 0.1rem;
+  height: 100px;
+  width: 100px;  
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 2.5s ease;
+  font-size: 1.5rem;
+}
+.active {
+  border-bottom: 3px solid #ececec;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0.1rem;
+  transition: color 0.8s ease;
+}
+.contac{
+  text-align: center;
+  color: #ff3300;
+  font-weight: bold;
+}
+.form{
+  max-width: 700px;
+  box-shadow: 0 0 10px #000;
+  width: 90%;
+  font-size: 1rem;
+  margin: 5px auto;
+  display: block;
+}
+.label{
+  text-align: center;
+  display: block;
+  margin: 0.5rem;
+  border-bottom: #bade0a 2px solid;
+  font-size: 1.2rem;
+}
+.h1trabajadores{
+  text-align: center;
+  color: #f7750b;
+  text-shadow: 2px 2px 0 #525252;
+  border-bottom: #000000 5px double ;
+  margin: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'montserrat';
+  font-size: 3rem;
+}
+nav ul li a:hover {
+  color: #000000;
+}
+.sobreNosotros{
+  align-items: center;
+  
+}
+.container{
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 90%;
+  height: 80%;
+  font-size: 1.5rem;
+  font-family: 'comic sans ms';
+  display: flex;
+  border: 10px double #565252;
+  border-radius: 8px;
+  text-align: justify;
+  align-items: center;
+  z-index: 10;
+  color: rgb(100, 94, 84);
+  text-shadow: #beb7b7 1px 1px 0;
+}
+/* ========== FOOTER ========== */
+footer {
+  background-color: rgba(255, 120, 0, 0.9);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+/* ========== MAIN ========== */
+main {
+  flex:1;
+
+}
+main h1 {
+  margin-bottom: 1.5rem;
+}
+/* ========== CARDS ========== */
+.card-container {
+  display: grid;
+  margin: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 3rem;
+}
+.card {
+  background-color: rgba( 145, 145, 125, 0.9);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0.5rem 0.5rem  rgba(0,0,0,0.1);
+  
+}
+.card img {
+  max-width: 18rem;
+  max-height: 15rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  color: #fff;
+  height: 200px;
+}
+.card h2 {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #000000;
+}
+.card p {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000000;
+}
+.card button {
+  background-color: #ff3300;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  max-width: 10rem;
+  max-height: 10rem;
+  font-size: 1.2rem;
+}
+.card button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+div{
+  justify-content: center;
+}
+/* ========== FORMULARIO ========== */
+form {
+  background-color: transparent;
+  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+  box-shadow: 0 0 35px #000;
+  margin-top: 3rem;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 3rem;
+  flex:content;  
+}
+form input[type="text"],
+form input[type="tel"],
+form select {
+  padding: 0.5rem;
+  border: 1px solid #81846f;
+  border-radius: 4px;
+}
+fieldset{
+  margin: 1% 3% ;
+  border: 0.2rem solid #000000;
+  flex: auto;
+  font-size: 2rem;
+}
+legend{
+  padding: 0 6px;
+  font-weight: bold;
+  color: #ff3300;
+}
+.boton{
+  background-color: #ffc400;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+  align-items: center ;
+  text-decoration: none;
+}
+.boton:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+.jpeg{
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+  height: auto;
+}
+.imgSn{
+  max-width: 5%;
+  max-height: 5%;
+}
+.jpeg2{
+  position:fixed;
+  left: 10%;
+  bottom: 10%;
+  width: 10%;
+}

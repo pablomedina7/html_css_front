@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Servicios Hogar</title>
+  <link rel="stylesheet" href="/proyecto/css/styles.css">
+  <!-- Script para autocompletar datos del trabajador -->
+  <script>
+    function fillFormDataFromURL() {
+      const params = new URLSearchParams(window.location.search);
+      const trabajador = params.get('trabajador');
+      const area = params.get('area');
+      if (trabajador) {
+        document.getElementById('nombreTrabajador').value = trabajador;
+      }
+      if (area) {
+        document.getElementById('areaTrabajador').value = area;
+      }
+    }
+    // Al cargar la página, se llama a la función
+    window.onload = fillFormDataFromURL;
+  </script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div> 
+      <a href="index.html"><img class="logo" src="/templates/icono.png" alt="Logo de la empresa"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+        <li class="active"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <fieldset>
+        <legend>Formulario de Contacto</legend>
+    <form action="#" >
+      <label class="label"   for="nombreTrabajador">Nombre del Trabajador:</label>
+      <input 
+        class="form"
+        type="text" 
+        id="nombreTrabajador" 
+        name="nombreTrabajador" 
+        placeholder="Ej: Juan"
+        required>
+      <label class="label" for="areaTrabajador">Área del Trabajador:</label>
+      <input 
+        class="form"
+        type="text" 
+        id="areaTrabajador" 
+        name="areaTrabajador" 
+        placeholder="Ej:plomería"
+        required>
+      <label class="label"  for="nombreCliente" placeholder="nombre">Nombre del Cliente:</label>
+      <input 
+        class="form"
+        type="text" 
+        id="nombreCliente" 
+        name="nombreCliente" 
+        required
+        placeholder="Ej:pepito">
+      <label class="label"  for="apellidoCliente">Apellido del Cliente:</label>
+      <input 
+        class="form"
+        type="text" 
+        id="apellidoCliente" 
+        name="apellidoCliente" 
+        required
+        placeholder="Ej:ramirez">
+      <label class="label"  for="metodoPago">Método de Pago:</label>
+      <select 
+        class="form"
+        id="metodoPago" 
+        name="metodoPago" 
+        required>
+        <option value="Efectivo">Efectivo</option>
+        <option value="Transferencia">Transferencia</option>
+      </select>
+      <label class="label"  for="telefonoCliente">Número de Teléfono:</label>
+      <input 
+        class="form"
+        type="tel" 
+        id="telefonoCliente" 
+        name="telefonoCliente" 
+        required
+        placeholder="Ej: 0971551111">
+      <button class="boton">
+        <a class="boton" href="index.html">Enviar</a>
+      </button>
+    </form>
+</fieldset>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Servicios Hogar. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
