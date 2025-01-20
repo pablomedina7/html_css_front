@@ -28,5 +28,5 @@ Para visualizar el proyecto en tu máquina local:
 Clona este repositorio:
 - git clone https://github.com/pablomedina7/html_css_front.git
 ## Navega al directorio del proyecto:
--cd html_css_front
-Abre el archivo "index.html" en tu navegador preferido.
+- cd html_css_front
+- Abre el archivo "index.html" en tu navegador preferido.
