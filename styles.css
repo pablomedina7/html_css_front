@@ -386,4 +386,13 @@ form select {
 .active{
   margin-right: 0.1rem;
 }
-
+@media screen and (max-width: 768px) {
+  .boton {
+    display: block; /* Asegura que el botón ocupe su propio espacio */
+    margin: 2rem auto; /* Centra el botón horizontal y da un margen vertical */
+    width: 80%; /* Botón adaptado al ancho de la pantalla */
+    text-align: center; /* Centra el texto dentro del botón */
+    padding: 1rem; /* Aumenta el área clicable */
+    font-size: 1.2rem; /* Tamaño del texto del botón */
+  }
+}
