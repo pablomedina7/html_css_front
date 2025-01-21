@@ -79,6 +79,7 @@ nav ul li a {
   margin: 0.5rem;
   border-bottom: #ffffff 0.2rem solid;
   font-size: 1.2rem;
+  font-family: 'Montserrat';
 }
 .h1trabajadores{
   text-align: center;
@@ -283,4 +284,17 @@ legend{
     max-width: 22rem; /* Limita el tamaño de las tarjetas */
     margin: auto; /* Centra las tarjetas dentro del grid */
   }
+}
+.sobreNosotros{
+  text-align: center;
+  margin: 2% 15%;
+  font-size: 1.5rem;
+}
+fieldset{
+  margin: 5% 15% ;
+}
+.jpeg{
+  max-width: 35%;
+  max-height: 35%;
+  margin: 0% 30%;
 }
