@@ -126,7 +126,7 @@ text-decoration: none;
   text-shadow: 1px 1px 0 #474444;
 }
 .active {
-  border-bottom: 3px solid #ececec;
+  border-bottom: 0.2rem solid #ececec;
   font-weight: bold;
   display: inline-block;
   margin: 0.1rem;
@@ -156,17 +156,15 @@ text-decoration: none;
 }
 .h1trabajadores{
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   text-shadow: 1px 1px 0 #525252;
-  border-bottom: #000000 5px double ;
   margin-bottom: 1rem;
   font-family: 'kanit';
   font-size: 3rem;
   font-weight: bold;
 }
-nav ul li:hover {
-  color: #000000;
-}
+
+/* ========== SECCIÓN SOBRE NOSOTROS ========== */
 .sobreNosotros-container {
   display: flex;
   flex-direction: column; /* Diseño vertical en móviles */
@@ -174,6 +172,51 @@ nav ul li:hover {
   max-width: 90%;
   margin: 0 auto;
   gap: 1rem;
+}
+.jpeg {
+  width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+  max-width: 500px; /* Opcional: límite de tamaño máximo */
+  height: auto; /* Mantén la proporción */
+  object-fit: contain; /* Asegura que no se recorte */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.sobreNosotros-container {
+  display: flex;
+  justify-content: space-between; /* Separación entre texto e imagen */
+  align-items: center; /* Centrado vertical */
+  max-width: 90%; /* Ajusta el ancho del contenedor */
+  margin: 2rem auto; /* Centra el contenedor horizontalmente */
+  gap: 2rem; /* Espaciado entre texto e imagen */
+}
+
+/* Texto */
+.sobreNosotros {
+  flex: 1; /* El texto ocupa el 50% del espacio */
+  text-align: justify; /* Justifica el texto */
+  font-size: 1.7rem; /* Tamaño de fuente */
+  line-height: 1.8; /* Espaciado entre líneas */
+  font-family: 'Kanit', sans-serif;
+  color: #ffffff; /* Color del texto */
+}
+.imgSn{
+  max-width: 5%;
+  max-height: 5%;
+}
+.jpeg2{
+  position:fixed;
+  left: 10%;
+  bottom: 10%;
+  width: 10%;
+}
+
+/* Imagen */
+.jpeg {
+  flex: 1; /* La imagen ocupa el 50% del espacio */
+  max-width: 50%; /* La imagen ocupa todo el ancho de su contenedor */
+  height: auto; /* Mantén la proporción */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 /* ========== FOOTER ========== */
 footer {
@@ -201,6 +244,7 @@ main h1 {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  margin: 0% 10%;
 }
 .card {
   background-color: #313131;
@@ -293,55 +337,9 @@ form select {
   background-color: #ffffff;
   color: #000000;
 }
-.jpeg {
-  width: 100%; /* La imagen ocupa el ancho completo del contenedor */
-  max-width: 500px; /* Opcional: límite de tamaño máximo */
-  height: auto; /* Mantén la proporción */
-  object-fit: contain; /* Asegura que no se recorte */
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-.imgSn{
-  max-width: 5%;
-  max-height: 5%;
-}
-.jpeg2{
-  position:fixed;
-  left: 10%;
-  bottom: 10%;
-  width: 10%;
-}
-/* Contenedor para texto e imagen */
-.sobreNosotros-container {
-  display: flex;
-  justify-content: space-between; /* Separación entre texto e imagen */
-  align-items: center; /* Centrado vertical */
-  max-width: 90%; /* Ajusta el ancho del contenedor */
-  margin: 2rem auto; /* Centra el contenedor horizontalmente */
-  gap: 2rem; /* Espaciado entre texto e imagen */
-}
-
-/* Texto */
-.sobreNosotros {
-  flex: 1; /* El texto ocupa el 50% del espacio */
-  text-align: justify; /* Justifica el texto */
-  font-size: 1.7rem; /* Tamaño de fuente */
-  line-height: 1.8; /* Espaciado entre líneas */
-  font-family: 'Kanit', sans-serif;
-  color: #ffffff; /* Color del texto */
-}
-
-/* Imagen */
-.jpeg {
-  flex: 1; /* La imagen ocupa el 50% del espacio */
-  max-width: 50%; /* La imagen ocupa todo el ancho de su contenedor */
-  height: auto; /* Mantén la proporción */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-@media screen and (max-width: 768px) {
-  /* Contenedor de tarjetas */
+/* ========== MEDIA QUERIES ========== */
+@media screen and (max-width: 768px) 
+{
   .card-container {
     display: grid; /* Cambia a grid para mejor control */
     grid-template-columns: 1fr; /* Una tarjeta por fila */
