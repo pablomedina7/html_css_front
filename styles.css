@@ -366,26 +366,26 @@ form select {
 }
 /* ======= Ajustes en Pantallas Pequeñas ======= */
 @media screen and (max-width: 768px) {
-  .sobreNosotros {
-    max-width: 95%; /* Ocupa más ancho en pantallas pequeñas */
-    font-size: 1rem; /* Reduce el tamaño del texto */
-    margin: 1.5rem auto; /* Ajusta los márgenes */
-    text-align: justify;
+  .sobreNosotros-container {
+    flex-direction: column; /* Cambia a diseño vertical */
+    align-items: center; /* Centra los elementos */
+    gap: 1rem; /* Añade un espacio entre elementos */
   }
 
   .jpeg {
-    max-width: 90%; /* Imagen ocupa casi todo el ancho */
-    margin: 1.5rem auto; /* Reduce el margen superior */
+    max-width: 90%; /* Imagen ocupa el 90% del ancho disponible */
+    height: auto; /* Mantiene la proporción */
+    margin: 1rem auto; /* Centra la imagen y da espacio */
+    object-fit: cover; /* Asegura que la imagen se adapte sin distorsión */
+    border-radius: 10px; /* Bordes redondeados */
   }
 
-  .h1trabajadores {
-    font-size: 2rem; /* Ajusta el tamaño del título */
-    text-align: center; /* Centra el título */
+  .sobreNosotros {
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+    font-size: 1rem; /* Reduce el tamaño del texto */
   }
 }
-.active{
-  margin-right: 0.1rem;
-}
+
 @media screen and (max-width: 768px) {
   .boton {
     display: block; /* Asegura que el botón ocupe su propio espacio */
