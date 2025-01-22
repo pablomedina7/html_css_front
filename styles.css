@@ -265,19 +265,6 @@ form select {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-
-@media screen and (min-width: 1366px) {
-  .card-container {
-    grid-template-columns: repeat(4, 1fr); /* Para limitar a 4 columnas */
-    max-width: 80%; /* Centra y ajusta el ancho total */
-    margin: 0 auto; /* Centrado horizontal */
-  }
-
-  .card {
-    max-width: 22rem; /* Limita el tamaño de las tarjetas */
-    margin: auto; /* Centra las tarjetas dentro del grid */
-  }
-}
 @media screen and (max-width: 768px) {
   /* Contenedor de tarjetas */
   .card-container {
