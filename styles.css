@@ -10,12 +10,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background: #CA4F22
+  background: #868a8d
   
 }
 /* ========== HEADER ========== */
 header {
-  background-color: #A05235;
+  background-color: #000000;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -91,35 +91,24 @@ text-decoration: none;
 nav ul li:hover {
   color: #000000;
 }
-.sobreNosotros{
-  align-items: center;
-  
-}
-.container{
-  margin: 2rem auto;
-  padding: 1.5rem;
-  max-width: 90%;
-  height: 80%;
-  font-size: 1.5rem;
-  font-family: 'kanit';
+.sobreNosotros-container {
   display: flex;
-  border-radius: 8px;
-  text-align: justify;
+  flex-direction: column; /* Diseño vertical en móviles */
   align-items: center;
-  z-index: 10;
-  color: rgb(252, 252, 252);
-  
+  max-width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
 }
 /* ========== FOOTER ========== */
 footer {
-  background-color: #A84300;
+  background-color: #000000;
   color: #ffffff;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
   box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
   font-family: 'kanit';
-  font-weight: bold;
+  font-weight:400;
 }
 
 /* ========== MAIN ========== */
@@ -168,8 +157,8 @@ main h1 {
   font-size: 1.1rem;
 }
 .card button {
-  background-color: #ff3300;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 1rem;
@@ -179,7 +168,7 @@ main h1 {
   font-size: 1.5rem;
 }
 .card button:hover {
-  background-color: #ffffff;
+  background-color: #ff0000;
   color: #000000;
 }
 /* ========== FORMULARIO ========== */
@@ -229,13 +218,13 @@ form select {
   background-color: #ffffff;
   color: #000000;
 }
-.jpeg{
-  max-width: 300px;
-  display: block;
-  margin: 0 auto;
-  max-width: 20%;
-  height: auto;
-  grid-template-columns: 2fr 1fr;
+.jpeg {
+  width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+  max-width: 500px; /* Opcional: límite de tamaño máximo */
+  height: auto; /* Mantén la proporción */
+  object-fit: contain; /* Asegura que no se recorte */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .imgSn{
   max-width: 5%;
@@ -261,7 +250,7 @@ form select {
 .sobreNosotros {
   flex: 1; /* El texto ocupa el 50% del espacio */
   text-align: justify; /* Justifica el texto */
-  font-size: 1.5rem; /* Tamaño de fuente */
+  font-size: 1.7rem; /* Tamaño de fuente */
   line-height: 1.8; /* Espaciado entre líneas */
   font-family: 'Kanit', sans-serif;
   color: #ffffff; /* Color del texto */
@@ -334,19 +323,13 @@ form select {
 }
 @media screen and (max-width: 768px) {
   .sobreNosotros-container {
-    flex-direction: column; /* Cambia a diseño vertical */
-    align-items: center; /* Centra los elementos */
-  }
-
-  .sobreNosotros {
-    text-align: center; /* Centra el texto */
-    font-size: 1rem; /* Reduce el tamaño del texto */
-    margin-bottom: 1rem; /* Espaciado inferior */
+    flex-direction: column; /* Mantén diseño vertical en móviles */
+    padding: 1rem;
   }
 
   .jpeg {
-    max-width: 50%; /* Imagen ocupa casi todo el ancho */
-    margin-bottom: 1rem; /* Espaciado inferior */
+    max-width: 90%; /* Ajusta el ancho máximo de la imagen */
+    margin: 0 auto; /* Centra la imagen */
   }
 }
 @media screen and (max-width: 768px) {
