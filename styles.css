@@ -276,8 +276,10 @@ main h1 {
   cursor: pointer;
   max-width: 11rem;
   max-height: 11rem;
-  font-size: 1.3rem;
-  font-family: 'Audiowide';
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'kanit';
+  text-transform: uppercase;
 }
 .card button:hover {
   background-color: #ffffff;
