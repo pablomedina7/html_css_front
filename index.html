@@ -12,9 +12,14 @@
 </head>
 <body >
   <header>
-    <div class="logo">
-      <img class="logo"   src="logo.png" alt="Logo de la empresa">
+    <div class="logo"><a href="index.html"></a>
+      <img class="logo" src="logo.png" alt="Logo de la empresa">
     </div>
+    <button class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <nav>
       <ul>
         <li class="active"><a href="index.html">Inicio</a></li>
@@ -101,5 +106,14 @@
   <footer>
     <p> DOWORK - Todos los derechos reservados </p>
   </footer>
+  <script>
+    // Función para alternar el menú móvil
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      const hamburger = document.querySelector('.hamburger');
+      nav.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
