@@ -379,3 +379,30 @@ form select {
     font-size: 1.2rem; /* Tamaño del texto del botón */
   }
 }
+/* Pantallas grandes (PC) */
+@media screen and (min-width: 1024px) {
+  .sobreNosotros-container {
+    display: flex;
+    flex-direction: row; /* Coloca texto e imagen en línea */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: center; /* Centra verticalmente */
+    max-width: 80%; /* Ajusta el ancho del contenedor */
+    margin: 2rem auto; /* Centra horizontalmente */
+    gap: 2rem; /* Espaciado entre texto e imagen */
+  }
+
+  .sobreNosotros {
+    flex: 2; /* Ocupa más espacio el texto (2 partes de 3) */
+    text-align: justify; /* Justifica el texto */
+    font-size: 1.5rem; /* Ajusta el tamaño del texto */
+    color: #ffffff; /* Color del texto */
+  }
+
+  .jpeg {
+    flex: 1; /* Imagen ocupa menos espacio (1 parte de 3) */
+    max-width: 50%; /* La imagen se ajusta a su contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+}
