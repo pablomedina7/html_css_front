@@ -9,10 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
-  background: #9d9fa0
-  
 }
+/* ============ ANIMACIÓN DE FONDO ========== */
 .cube {
   position: absolute;
   top: 80vh;
@@ -78,16 +76,15 @@ body {
     opacity: 0;
   }
 }
-/* Contenedor de animaciones de fondo */
 .background-animation {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Coloca detrás del contenido */
+  z-index: -1;
   overflow: hidden;
-  background: #9d9fa0; /* Color de fondo base */
+  background: #d1d0d0; /* Color de fondo base */
 }
 /* ========== HEADER ========== */
 header {
@@ -149,21 +146,20 @@ text-decoration: none;
   text-align: center;
   display: block;
   margin: 0.5rem;
-  
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: 'kanit';
-  color: #ffffff;
+  color: #353333;
+  font-weight: bold;
 }
 .h1trabajadores{
   text-align: center;
   color: #000000;
-  text-shadow: 1px 1px 0 #525252;
+  text-shadow: 1px 2px 0 #fcfcfc;
   margin-bottom: 1rem;
-  font-family: 'kanit';
-  font-size: 3rem;
-  font-weight: bold;
+  font-family: 'Audiowide';
+  font-size: 3.1rem;
+  font-weight:300;
 }
-
 /* ========== SECCIÓN SOBRE NOSOTROS ========== */
 .sobreNosotros-container {
   display: flex;
@@ -175,8 +171,8 @@ text-decoration: none;
 }
 .jpeg {
   width: 100%; /* La imagen ocupa el ancho completo del contenedor */
-  max-width: 500px; /* Opcional: límite de tamaño máximo */
-  height: auto; /* Mantén la proporción */
+  max-width: 500px; 
+  height: auto; 
   object-fit: contain; /* Asegura que no se recorte */
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -189,28 +185,24 @@ text-decoration: none;
   margin: 2rem auto; /* Centra el contenedor horizontalmente */
   gap: 2rem; /* Espaciado entre texto e imagen */
 }
-
-/* Texto */
 .sobreNosotros {
   flex: 1; /* El texto ocupa el 50% del espacio */
   text-align: justify; /* Justifica el texto */
   font-size: 1.7rem; /* Tamaño de fuente */
   line-height: 1.8; /* Espaciado entre líneas */
-  font-family: 'Kanit', sans-serif;
-  color: #ffffff; /* Color del texto */
+  font-family: 'Kanit';
+
+  text-shadow: 1px 1px 0 #000000;
+  
 }
-.imgSn{
-  max-width: 5%;
-  max-height: 5%;
-}
-.jpeg2{
-  position:fixed;
-  left: 10%;
-  bottom: 10%;
-  width: 10%;
+.around{
+  background-color: #9e9e9e85;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #2e2c2c;
+  text-shadow: 0.1rem 0.1rem 0 #5c5a5a;
 }
 
-/* Imagen */
 .jpeg {
   flex: 1; /* La imagen ocupa el 50% del espacio */
   max-width: 50%; /* La imagen ocupa todo el ancho de su contenedor */
@@ -229,7 +221,6 @@ footer {
   font-family: 'kanit';
   font-weight:400;
 }
-
 /* ========== MAIN ========== */
 main {
   flex:1;
@@ -258,26 +249,26 @@ main h1 {
   max-height: 15rem;
   border-radius: 8px;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #eee7e7;
   height: 200px;
 }
 .card h2 {
-  margin-bottom: 0.5rem;
-  color: #ffffff;
+  margin-bottom: 0.4rem;
+  color: #746f6f;
   text-shadow: 1px 1px 0 #000000;
   font-family: 'kanit';
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 .card p {
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #746f6f;
   text-shadow: 1px 1px 0 #000000;
   font-family: 'kanit';
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 .card button {
-  background-color: #ffffff;
+  background-color: #ffffffa2;
   color: #000000;
   padding: 0.5rem 1rem;
   border: none;
@@ -285,19 +276,20 @@ main h1 {
   cursor: pointer;
   max-width: 11rem;
   max-height: 11rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-family: 'Audiowide';
 }
 .card button:hover {
-  background-color: #ff0000;
+  background-color: #ffffff;
   color: #000000;
 }
 /* ========== FORMULARIO ========== */
 form {
   background-color: transparent;
   padding: 20px;
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
-  box-shadow: 0 0 12px #111111;
+  box-shadow: 0 0 9px #111111;
   margin-top: 3rem;
   border-radius: 8px;
   font-size: 16px;
@@ -305,25 +297,27 @@ form {
   flex:content;  
 }
 form option{
-  background-color: #A05235;
-  color: #f8f8f8;
+  background-color: #acacac;
+  color: #000000;
 }
 form input[type="text"],
 form input[type="tel"],
 form select {
   padding: 0.5rem;
-  border: 1px solid #81846f;
+  border: 2px solid #ffffff;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #b1adad;
+  color: #000000;
 }
 ::placeholder{
-  color: #4e4141;
+  color: #424242;
 }
 .boton{
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 3rem;
   border-radius: 0.5rem;
-  margin: 2% 80%;
+  margin: 3% 40%;
   display:flex;
+  justify-content: center;
   text-decoration: none;
   font-family: "kanit";
   font-size: 1.4rem;
@@ -331,9 +325,7 @@ form select {
   background-color: #000;
   color: #fdfdfd;
 }
-.botondiv{
-  display: flex;
-}
+
 .boton:hover{
   background-color: #ffffff;
   color: #000000;
@@ -347,12 +339,12 @@ form select {
     gap: 1rem; /* Espaciado entre las tarjetas */
     padding: 1rem; /* Espacio interno lateral */
     justify-items: center; /* Centra las tarjetas horizontalmente */
+    margin: 0% 10%;
   }
-
   /* Tarjetas individuales */
   .card {
     width: 100%; /* Asegura que la tarjeta ocupe todo el ancho del contenedor */
-    max-width: 350px; /* Limita el ancho máximo de las tarjetas */
+    max-width: 380px; /* Limita el ancho máximo de las tarjetas */
     margin: 0 auto; /* Centra las tarjetas */
   }
   /* Imágenes dentro de las tarjetas */
@@ -361,7 +353,6 @@ form select {
     height: auto; /* Mantiene proporción */
     border-radius: 8px; /* Bordes redondeados */
   }
-
   /* Ajuste del botón */
   .card button {
     font-size: 1.2rem; /* Texto del botón más legible */
@@ -370,13 +361,11 @@ form select {
     margin: 1rem auto; /* Espaciado superior e inferior */
     border-radius: 0.5rem; /* Bordes redondeados */
   }
-
   /* Ajuste de los textos */
   .card h2 {
     font-size: 1.5rem; /* Tamaño del nombre ajustado */
     margin-bottom: 0.5rem;
   }
-
   .card p {
     font-size: 1rem; /* Texto de área y experiencia más compacto */
     margin-bottom: 0.5rem;
@@ -387,7 +376,6 @@ form select {
     flex-direction: column; /* Mantén diseño vertical en móviles */
     padding: 1rem;
   }
-
   .jpeg {
     max-width: 90%; /* Ajusta el ancho máximo de la imagen */
     margin: 0 auto; /* Centra la imagen */
@@ -399,23 +387,25 @@ form select {
     align-items: flex-start; /* Alinea los elementos al inicio */
     gap: 1rem; /* Reduce el espaciado */
   }
-
   nav ul li {
     width: 100%; /* Cada enlace ocupa todo el ancho disponible */
   }
-
   nav ul li a {
     font-size: 1.2rem; /* Ajusta el tamaño del texto */
   }
 }
 /* ======= Ajustes en Pantallas Pequeñas ======= */
 @media screen and (max-width: 768px) {
+  .h1trabajadores{
+    font-size: 2.4rem;
+    margin-bottom: 0.1rem;
+  }
   .sobreNosotros-container {
     flex-direction: column; /* Cambia a diseño vertical */
     align-items: center; /* Centra los elementos */
-    gap: 1rem; /* Añade un espacio entre elementos */
+    gap: 0.6rem; /* Añade un espacio entre elementos */
+    padding: 0.4rem;
   }
-
   .jpeg {
     max-width: 90%; /* Imagen ocupa el 90% del ancho disponible */
     height: auto; /* Mantiene la proporción */
@@ -423,13 +413,15 @@ form select {
     object-fit: cover; /* Asegura que la imagen se adapte sin distorsión */
     border-radius: 10px; /* Bordes redondeados */
   }
-
   .sobreNosotros {
     text-align: center; /* Centra el texto en pantallas pequeñas */
     font-size: 1rem; /* Reduce el tamaño del texto */
   }
+  .around{
+    text-shadow: none;
+    font-size: 1.3rem;
+  }
 }
-
 @media screen and (max-width: 768px) {
   .boton {
     display: block; /* Asegura que el botón ocupe su propio espacio */
@@ -440,8 +432,12 @@ form select {
     font-size: 1.2rem; /* Tamaño del texto del botón */
   }
 }
+
 /* Pantallas grandes (PC) */
 @media screen and (min-width: 1024px) {
+  header{
+    padding: 0.6rem;
+  }
   .sobreNosotros-container {
     display: flex;
     flex-direction: row; /* Coloca texto e imagen en línea */
@@ -451,19 +447,29 @@ form select {
     margin: 2rem auto; /* Centra horizontalmente */
     gap: 2rem; /* Espaciado entre texto e imagen */
   }
-
   .sobreNosotros {
     flex: 2; /* Ocupa más espacio el texto (2 partes de 3) */
     text-align: justify; /* Justifica el texto */
     font-size: 1.5rem; /* Ajusta el tamaño del texto */
     color: #ffffff; /* Color del texto */
   }
-
   .jpeg {
     flex: 1; /* Imagen ocupa menos espacio (1 parte de 3) */
     max-width: 50%; /* La imagen se ajusta a su contenedor */
     height: auto; /* Mantiene la proporción */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  form{
+    max-width: 40%;
+  }
+  .around{
+    text-shadow: none;
+  }
+}
+@media  screen and (max-width: 768px) 
+{form{
+    max-width: 80%;
+    padding: 10px;
   }
 }
